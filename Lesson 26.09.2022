@@ -1,0 +1,20 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	//var StudentName string = "John Doe"
+	//var Grade int = 77
+	//var IsPassed bool = true
+
+	//var StudentName = "John Doe"
+	//var Grade = 77
+	//var IsPassed = true
+
+	var StudentName, Grade, IsPassed = "John Doe", 77, true
+
+	fmt.Println(StudentName)
+	fmt.Println(Grade)
+	fmt.Println(IsPassed)
+}
