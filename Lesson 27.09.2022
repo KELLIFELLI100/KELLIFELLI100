@@ -1,0 +1,18 @@
+package main
+
+import "fmt"
+
+var PuncVar = "Puncss"
+
+func main() {
+
+	var funcVar = "Funcss"
+	fmt.Println(funcVar)
+
+}
+
+/*func myFunc() {
+
+	fmt.Println(PuncVar)
+}
+*/
