@@ -1,0 +1,143 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	/* 	var (
+		name      string = "Arin"
+		age       int    = 40
+		isMarried bool   = true
+
+		weight float32 = 72.5
+		height int     = 172
+	) */
+
+	/* var name, age, isMarried, weight, height = "Arin", 40, true, 72.5, 172 */
+
+	/* name, age, isMarried, weight, height := "Arin", 40, true, 72.5, 172 */
+
+	var isMarried bool
+
+	fmt.Println(isMarried) // string --> "", numeric --> 0, bool --> false
+	/* 	fmt.Println(age)
+	   	fmt.Println(isMarried)
+	   	fmt.Println(weight)
+	   	fmt.Println(height) */
+
+}
+
+
+
+
+Ayni Gun:
+
+// 1-) studentName --> John Doe, grade --> 77, isPassed --> true değişkenlerini uc farklı yöntem ile oluşturup, çıktısını yazdırınız.
+
+/*package main
+
+import "fmt"
+
+func main() {
+
+
+
+	/*var studentName string = "Jhon Doe"
+	var grade int = 77
+	var isPassed bool = true*/
+
+/*var studentName = "Jhon Doe"
+	var grade = 77
+	var isPassed = true
+
+	fmt.Println(studentName)
+	fmt.Println(grade)
+	fmt.Println(isPassed)
+
+}
+
+*/
+
+// 2-) yukarıda belirtilen değişkenleri tek satır içerisinde tanımlayınız.
+
+/*
+package main
+
+import "fmt"
+
+func main() {
+
+/*	var studentName, grade, isPassed = "jhon Doe", 77, true
+
+	studentName, grade, isPassed := "Jhon Doe", 77, true
+
+	fmt.Println(studentName)
+	fmt.Println(grade)
+	fmt.Println(isPassed)
+}
+
+*/
+
+// 3-) "Declaration", "Assign", "Initialization", "Initial Value" kavramlarını açıklayınız. (Terminoloji)
+
+/* package main
+
+import "fmt"
+
+func main() {
+
+	Declaration: "var studentName string" ediyoruz
+	Assign: " = "jhon Doe" " eşittirden sonraki kısım, veriyi açıklamak
+	Initialization: " Bir değeri başlatmak"
+    Initial Value: " Ilk deger anlamında kullanılıyor, bir declaration nin birden fazla ismi olabilir "
+
+
+	fmt.Println(studentName)
+
+} */
+
+// 4-) "Statically Typed" vs "Dynamically Typed" ifadelerini GO ve Python üzerinden gösteriniz.
+
+// Statically Tped: "ing. statik tipli. değişkenlerin hangi tipte olduğunun derleme anında bilindiği dillere denir.
+//o yüzden değişkenlerin alabildiği değer tipi programın ilerleyen safhasında değişemez."
+
+//Dynamically Typed: "ing. dinamik tipli. değişkenlerin tiplerinin programın çalışması sırasında değişebildiği programlama dillerine verilen sıfattır"
+
+/* package main
+
+import "fmt"
+
+func main() {
+
+	var x int = 100
+
+	// var x = "Ahmet" ayni kod uzerinde pyton dilinde hata vermezken, go dilinde hatalı bir ifadedir bu. Bu yuzden go dili pyton a gore daha az hafıza ile daha efektif calisir.
+
+	fmt.Println(x)
+}
+
+*/
+
+// 5-) ":=" vs "=" aradaki farkı gösteriniz, double declaration
+
+package main
+
+import "fmt"
+
+func main() {
+
+	//":=" ifadesinde  double declaration (iki kez tekrar etme) yapilmaz hata alinir.
+	//"=" ifadesinde ise double declaration (iki kez tekrar etme) yapilir fakat son atanan ifade kullanilir.
+
+	/*	Örn: studentName := "John Doe"
+		     studentName = "Mahmut Erdem" olursa "Mahmut Erdem" ismi cikar.
+
+		/* 	var studentName string = "John Doe"
+		   	studentName = "Mahmut Erdem" */
+
+	studentName := "John Doe"
+	studentName = "Mahmut Erdem"
+
+	fmt.Println(studentName)
+
+}
